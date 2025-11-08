@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Projects</title>
+
+   <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/7c1cdf7386.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light">
+
+    <!-- Shared Navbar -->
+  <%- include('partials/navbar') %>
+
+  <<main class="container py-5">
+    <section id="projects">
+      <h1 class="mb-4 text-center">My Projects</h1>
+
+      <div class="project-list clearfix">
+        <div class="project-item mb-4 p-3 border rounded">
+          <h3>Student Grade Calculator</h3>
+          <p>
+            Designed a student grade calculator that takes assignment scores as input and calculates the final grade.
+            Implemented input validation and user-friendly error messages to ensure accurate results.
+          </p>
+        </div>
+
+        <div class="project-item mb-4 p-3 border rounded">
+          <h3>Online Quiz App</h3>
+          <p>
+            Built an interactive quiz application using HTML, CSS, and JavaScript.
+            The app presents multiple-choice questions, tracks the user’s score, and gives instant feedback after each question.
+          </p>
+        </div>
+
+        <div class="project-item mb-4 p-3 border rounded">
+          <h3>Simple Expense Tracker</h3>
+          <p>
+            Developed a web-based expense tracker using JavaScript to help users manage their daily expenses.
+            The application allows users to add, edit, and delete transactions while keeping a running total.
+          </p>
+        </div>
+
+        <div class="project-item mb-4 p-3 border rounded">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Created a personal portfolio website using HTML5 and CSS3 to showcase my skills, projects, and experience.
+            The site includes multiple pages, a responsive layout, and embedded media to enhance user experience.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+<!-- Shared Footer -->
+  <%- include('partials/footer') %>
+
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

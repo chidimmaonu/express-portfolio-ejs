@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/7c1cdf7386.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-light">
+
+    <!-- Shared Navbar -->
+  <%- include('partials/navbar') %>
+
+  <main class="container py-5">
+    <section id="contact" class="mx-auto" style="max-width: 600px;">
+      <h1 class="mb-4 text-center">Contact Me</h1>
+
+      <!-- Contact form (from old page, slightly Bootstrap-ified) -->
+      <form action="#" method="post" class="mb-4">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            maxlength="30"
+            placeholder="Enter your name"
+            class="form-control"
+          >
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+            class="form-control"
+          >
+        </div>
+
+        <div class="mb-3">
+          <label for="cell" class="form-label">Cell No.:</label>
+          <input
+            type="tel"
+            id="cell"
+            name="cell"
+            pattern="[0-9]{10}"
+            required
+            placeholder="1234567890"
+            class="form-control"
+          >
+        </div>
+
+        <div class="mb-3">
+          <label for="comments" class="form-label">Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            cols="50"
+            required
+            placeholder="Type your message here"
+            class="form-control"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+
+      <!-- Contact info from old page -->
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:chidimmaonumaegbu13@gmail.com">
+          chidimmaonumaegbu13@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="#" target="_blank">
+          Chidimma Onumaegbu
+        </a>
+      </p>
+    </section>
+  </main>
+
+
+  <!-- Shared Footer -->
+  <%- include('partials/footer') %>
+
+  <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

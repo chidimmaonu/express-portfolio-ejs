@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chidimma's Portfolio</title>
+
+   <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/7c1cdf7386.js" crossorigin="anonymous"></script>
+</head>
+<body id="home" class="bg-light">
+
+  <!-- Shared Navbar -->
+  <%- include('partials/navbar') %>
+
+  <main class="container py-5">
+    <section class="text-center">
+      <!-- Profile image moved from old <header> -->
+      <img
+        src="/images/pfp.jpeg"
+        alt="Chidimma's pfp"
+        width="100"
+        class="rounded-circle mb-3"
+      >
+
+      <!-- Text from old <main> -->
+      <h2>Hello! Im Chidimma</h2>
+      <p>Explore to learn more about me and my work!</p>
+    </section>
+  </main>
+  
+  <!-- Shared Footer -->
+  <%- include('partials/footer') %>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

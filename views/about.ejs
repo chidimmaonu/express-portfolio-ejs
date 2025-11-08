@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  
+  <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/7c1cdf7386.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-light">
+
+    <!-- Shared Navbar -->
+  <%- include('partials/navbar') %>
+
+  <main class="container py-5">
+    <section id="about" class="text-center">
+      <h1 class="mb-4">Who I Am</h1>
+
+      <!-- Portrait image -->
+      <img
+        src="/images/me.jpeg"
+        alt="Chidimma's Portrait"
+        width="240"
+        class="mb-4 img-fluid"
+      >
+
+      <p id="first">
+        Hi! I’m Chidimma Onumaegbu, a Bachelor of IT student majoring in Technology Management at Ontario Tech University.
+      </p>
+      <p class="second">
+        I enjoy learning about technology, creating projects, and improving my coding and design skills. Welcome to my portfolio!
+      </p>
+      <p class="second">
+        Feel free to explore my projects and get in touch!
+      </p>
+
+    </section>
+  </main>
+
+
+  <!-- Shared Footer -->
+  <%- include('partials/footer') %>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
